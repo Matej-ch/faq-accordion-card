@@ -4,7 +4,7 @@ import FaqItem from "./FaqItem";
 function App() {
 
     return (
-        <article className="faq">
+        <main className="faq" role='main'>
             <div className={'logo'}></div>
             <h1>Faq</h1>
             <FaqItem heading={'How many team members can I invite?'}
@@ -18,7 +18,7 @@ function App() {
                      paragraph={'Yes you can cancel your subscription at any time.'}/>
             <FaqItem heading={'Do you provide additional support?'}
                      paragraph={'Yes, we do.'}/>
-        </article>
+        </main>
     )
 }
 

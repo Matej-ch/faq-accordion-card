@@ -10,12 +10,12 @@ function FaqItem({heading, paragraph, isOpen}: { heading: string, paragraph: str
         setToggle(() => !toggle)
     }
 
-    return (<div className={'faq-item'} onClick={toggleFag}>
+    return (<article className={'faq-item'} onClick={toggleFag}>
         <h2 className={toggle ? 'selected' : ''}><span>{heading}</span>
             <img src={arrowIcon} alt="" className={toggle ? 'rotate-180' : ''}/>
         </h2>
         {toggle ? <p>{paragraph}</p> : null}
-    </div>);
+    </article>);
 }
 
 export default FaqItem;
