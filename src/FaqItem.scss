@@ -1,0 +1,30 @@
+.faq-item {
+  padding-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--clr-divider);
+
+  h2 {
+    font-weight: var(--fw-regular);
+    font-size: 14px;
+    color: var(--clr-text-primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.selected {
+      font-weight: var(--fw-bold);
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  p {
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-regular);
+    color: var(--clr-gray-blue-secondary);
+  }
+
+  .rotate-180 {
+    transform: rotate(180deg);
+  }
+}
