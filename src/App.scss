@@ -1,6 +1,6 @@
 .faq {
   background-color: white;
-  padding: 8rem 2rem 2rem 2rem;
+  padding: 10rem 2rem 2rem 2rem;
   border-radius: 8px;
   width: min(90%, 25rem);
   margin: 0 auto;
@@ -16,10 +16,10 @@ h1 {
 
 .logo {
   background: url('./assets/illustration-woman-online-mobile.svg'), url("./assets/bg-pattern-mobile.svg");
-  height: 18rem;
+  height: 22rem;
   background-repeat: no-repeat, no-repeat;
   position: absolute;
-  top: -11rem;
+  top: -13rem;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -27,4 +27,20 @@ h1 {
   width: min(90%, 25rem);
   background-position: center, bottom;
   background-size: contain, contain;
+}
+
+@media screen and (min-width: 600px) {
+  .faq {
+    padding: 4rem 4rem 4rem 30rem;
+    width: min(100%, 70rem);
+    background: url('./assets/illustration-box-desktop.svg'), url('./assets/illustration-woman-online-desktop.svg'), url("./assets/bg-pattern-desktop.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-color: white;
+    background-position: -4rem 60%, -80px center, -40rem center;
+  }
+
+  .logo {
+    display: none
+  }
+
 }
